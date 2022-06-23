@@ -342,7 +342,7 @@ namespace PCA9685 {
      * @param dutyCycle The duty cycle (0-100) to set the LED to
      */
     //% block
-    //% ledNum.min=0 ledNum.max=15
+    //% ledNum.min=0 ledNum.max=15 dutyCycle.min=0 dutyCycle.max=100
     export function setLedDutyCycle(ledNum: number, dutyCycle: number, chipAddress: number = 0x40): void {
         ledNum = Math.max(0, Math.min(15, ledNum))
         dutyCycle = Math.max(0, Math.min(100, dutyCycle))
